@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:mapsui="clr-namespace:Mapsui.UI.Forms;assembly=Mapsui.UI.Forms"
+
+            mc:Ignorable="d"
+            xmlns:views="clr-namespace:Audio_Guide.Views"
+            x:Class="Audio_Guide.Views.MainPage" 
+            Title="MainPage">
+
+    <!--BackgroundImageSource ="background.jpg"-->
+
+    <ContentPage.Content>
+        <Grid x:Name="ContentGrid">
+            
+            <RelativeLayout>
+
+                <mapsui:MapView x:Name="mapview"
+                            HorizontalOptions="FillAndExpand"
+                            BackgroundColor="Black"
+                            Margin="0"
+                            />
+
+                <SearchBar Placeholder="Search..." TextColor="Black" FontSize="Medium" BackgroundColor="White" Opacity="0.7" Grid.ColumnSpan="3"/>
+
+                <Label Text="Explore" FontSize="Title" RelativeLayout.XConstraint=
+                       "{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0.63,Constant=-100}"
+                       RelativeLayout.YConstraint=
+                       "{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=0.83,Constant=-100}"/>
+
+                <Image Source="place_image.png" RelativeLayout.XConstraint=
+                       "{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0.27,Constant=-100}"
+                       RelativeLayout.YConstraint=
+                       "{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=0.9,Constant=-100}"
+                       RelativeLayout.HeightConstraint=
+                       "{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=0.15}"/>
+
+                <Button Text="+ more info" Clicked="Button_Clicked" RelativeLayout.XConstraint=
+                       "{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0.27,Constant=-100}"
+                       RelativeLayout.YConstraint=
+                       "{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=1.05,Constant=-100}"/>
+
+                <Image Source="place_image_two.png" RelativeLayout.XConstraint=
+                       "{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0.6,Constant=-100}"
+                       RelativeLayout.YConstraint=
+                       "{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=0.9,Constant=-100}"
+                       RelativeLayout.HeightConstraint=
+                       "{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=0.15}"/>
+
+                <Button Text="+ more info" Clicked="Button_Clicked_1" RelativeLayout.XConstraint=
+                       "{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0.6,Constant=-100}"
+                       RelativeLayout.YConstraint=
+                       "{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=1.05,Constant=-100}"/>
+
+                <Image Source="place_image_three.png" RelativeLayout.XConstraint=
+                       "{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0.93,Constant=-100}"
+                       RelativeLayout.YConstraint=
+                       "{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=0.9,Constant=-100}"
+                       RelativeLayout.HeightConstraint=
+                       "{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=0.15}"/>
+
+                <Button Text="+ more info" Clicked="Button_Clicked_2" RelativeLayout.XConstraint=
+                       "{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0.93,Constant=-100}"
+                       RelativeLayout.YConstraint=
+                       "{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=1.05,Constant=-100}"/>
+
+            </RelativeLayout>
+
+            
+
+
+        </Grid>
+    </ContentPage.Content>
+        
+
+</ContentPage>
