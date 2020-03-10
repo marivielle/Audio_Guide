@@ -3,7 +3,7 @@
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-            xmlns:mapsui="clr-namespace:Mapsui.UI.Forms;assembly=Mapsui.UI.Forms"
+			xmlns:mapsui="clr-namespace:Mapsui.UI.Forms;assembly=Mapsui.UI.Forms"
 
             mc:Ignorable="d"
             xmlns:views="clr-namespace:Audio_Guide.Views"
@@ -14,16 +14,16 @@
 
     <ContentPage.Content>
         <Grid x:Name="ContentGrid">
-            
-            <RelativeLayout>
 
+            <!--<RelativeLayout>-->
                 <mapsui:MapView x:Name="mapview"
-                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand"
+                            HorizontalOptions="Fill"
                             BackgroundColor="Black"
                             Margin="0"
                             />
 
-                <SearchBar Placeholder="Search..." TextColor="Black" FontSize="Medium" BackgroundColor="White" Opacity="0.7" Grid.ColumnSpan="3"/>
+                <!--<SearchBar Placeholder="Search..." TextColor="Black" FontSize="Medium" BackgroundColor="White" Opacity="0.7" Grid.ColumnSpan="3"/>
 
                 <Label Text="Explore" FontSize="Title" RelativeLayout.XConstraint=
                        "{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0.63,Constant=-100}"
@@ -64,9 +64,9 @@
                 <Button Text="+ more info" Clicked="Button_Clicked_2" RelativeLayout.XConstraint=
                        "{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0.93,Constant=-100}"
                        RelativeLayout.YConstraint=
-                       "{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=1.05,Constant=-100}"/>
+                       "{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=1.05,Constant=-100}"/>--><!--
 
-            </RelativeLayout>
+            </RelativeLayout>-->
 
             
 

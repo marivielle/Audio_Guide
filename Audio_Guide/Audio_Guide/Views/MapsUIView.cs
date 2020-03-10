@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Mapsui.Styles;
+using Mapsui.UI.Forms;
 
 namespace Audio_Guide.Views
 {
@@ -10,7 +11,7 @@ namespace Audio_Guide.Views
         public Mapsui.Map NativeMap { get; }
 
         protected internal MapsUIView()
-        {
+        {   
             NativeMap = new Mapsui.Map();
             NativeMap.BackColor = Color.Black; //Colour matches map (black over white here)
         }
