@@ -20,6 +20,10 @@ namespace Audio_Guide
 
             DependencyService.Register<MockDataStore>();
             MainPage = new NavigationPage(new MainPage());
+            CarouselPage carouselPage = new CarouselPage();
+            carouselPage.Children.Add(new MainPage());
+            carouselPage.Children.Add(new Explore());
+            MainPage = carouselPage;
         }
 
         protected override void OnStart()
