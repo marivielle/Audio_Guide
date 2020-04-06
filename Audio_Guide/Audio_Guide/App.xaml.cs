@@ -23,6 +23,7 @@ namespace Audio_Guide
             CarouselPage carouselPage = new CarouselPage();
             carouselPage.Children.Add(new MainPage());
             carouselPage.Children.Add(new Explore());
+            carouselPage.Children.Add(new Settings());
             MainPage = carouselPage;
         }
 
