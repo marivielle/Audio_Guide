@@ -19,7 +19,7 @@ namespace Audio_Guide
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new SplashScreen());
             CarouselPage carouselPage = new CarouselPage();
             carouselPage.Children.Add(new MainPage());
             carouselPage.Children.Add(new Explore());
