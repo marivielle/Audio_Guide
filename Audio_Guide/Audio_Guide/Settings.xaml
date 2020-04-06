@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Audio_Guide.Settings"
+        BackgroundColor="AliceBlue">
+    <ContentPage.Content>
+        <StackLayout Margin="20,0,20,0">
+            <Label Text="Settings" HorizontalOptions="Center" VerticalOptions="Center" FontSize="30"/>
+
+
+            <Grid>
+                <Label Text="Points of interest displayed: " Padding="0,30,0,0" FontSize="20"/>
+                <Picker x:Name="myPicker" HorizontalOptions="End" Grid.Row="0" Grid.Column="1">
+                    <Picker.Items >
+                        <x:String>1</x:String>
+                        <x:String>2</x:String>
+                        <x:String>3</x:String>
+                        <x:String>4</x:String>
+                        <x:String>5</x:String>
+                        <x:String>6</x:String>
+                        <x:String>7</x:String>
+                        <x:String>8</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Text="Category: " Padding="0,30,0,0" FontSize="20" Grid.Column="0" Grid.Row="1"/>
+                <Picker x:Name="Categories" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="1" Grid.Column="1" >
+                    <Picker.Items >
+                        <x:String>General</x:String>
+                        <x:String>Shopping</x:String>
+                        <x:String>Food + Drink</x:String>
+                        <x:String>Entertainment</x:String>
+                        <x:String>Attractions</x:String>
+                        <x:String>Historical</x:String>
+                        <x:String>Services</x:String>
+                        <x:String>Places to Stay</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Text="Nightmode" FontSize="20" Grid.Column="0" Grid.Row="2" Padding="0,20,0,0"/>
+                <Switch IsToggled="true" OnColor="LightPink"
+        ThumbColor="LightBlue"  VerticalOptions="Center" Grid.Column="1" Grid.Row="2"/>
+
+                <Slider x:Name="Distance"  Maximum="30" Minimum="1" Value="5"  ValueChanged="Slide_ValueChanged" Grid.Column="1" Grid.Row="3"/>
+                <Label Text="Distance (Miles)" FontSize="20" Grid.Column="0" Grid.Row="3"/>
+                <Label x:Name="dist" HorizontalOptions="EndAndExpand" FontSize="20" Grid.Column="1" Grid.Row="3"/>
+
+                <Label Text="Star Rating" FontSize="20" Grid.Column="0" Grid.Row="4" Padding="0,20,0,0"/>
+                <Picker x:Name="Star_Rating" VerticalOptions="FillAndExpand" HorizontalOptions="End" Grid.Row="4" Grid.Column="1" >
+                    <Picker.Items >
+                        <x:String>0+</x:String>
+                        <x:String>1+</x:String>
+                        <x:String>2+</x:String>
+                        <x:String>3+</x:String>
+                        <x:String>4+</x:String>
+                        <x:String>5</x:String>
+                    </Picker.Items>
+                </Picker>
+
+
+            </Grid>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
