@@ -24,6 +24,7 @@ namespace Audio_Guide
             carouselPage.Children.Add(new MainPage());
             carouselPage.Children.Add(new Explore());
             carouselPage.Children.Add(new Settings());
+            carouselPage.Children.Add(new Directions());
             MainPage = carouselPage;
         }
 
