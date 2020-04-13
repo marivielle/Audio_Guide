@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Audio_Guide.Directions"
+             BackgroundImageSource="background.jpg">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <!--First Child-->
+
+
+        <Grid>
+            <BoxView Color="AliceBlue"
+                     Opacity="0.8"
+                     CornerRadius="10"
+                     WidthRequest="200"
+                     HeightRequest="700"
+                    
+                     HorizontalOptions="End" 
+                     VerticalOptions="FillAndExpand"
+                     
+             Grid.Column="2"
+                     
+        
+                     />
+        </Grid>
+        <!--Second Child-->
+        <Grid>
+
+
+
+            <Label  Grid.Column="2" Text="Directions" FontSize="20" FontAttributes="Bold" TextDecorations="Underline"  HorizontalOptions="CenterAndExpand">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Drctns"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+
+            <Label  HorizontalOptions="Start"  Text="1. Turn Right" Grid.Column="2" Grid.Row="1"  FontSize="15" FontAttributes="Bold" Margin="10,0,0,0"/>
+            <Label  HorizontalOptions="Start"  Text="2. Turn Left" Grid.Column="2" Grid.Row="2"  FontSize="15" FontAttributes="Bold" Margin="10,0,0,0"/>
+            <Label HorizontalOptions="Start"  Text="3. Go Striaght Ahead" Grid.Column="2" Grid.Row="3"  FontSize="15" FontAttributes="Bold" Margin="10,0,0,0"/>
+        </Grid>
+    </Grid>
+</ContentPage>
