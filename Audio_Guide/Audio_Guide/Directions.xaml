@@ -36,7 +36,7 @@
 
 
 
-            <Label  Grid.Column="2" Text="Directions" FontSize="20" FontAttributes="Bold" TextDecorations="Underline"  HorizontalOptions="CenterAndExpand">
+            <Label  Grid.Column="2" Text="Directions" x:Name="Drctns"FontSize="20" FontAttributes="Bold" TextDecorations="Underline"  HorizontalOptions="CenterAndExpand">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="Drctns"/>
                 </Label.GestureRecognizers>
