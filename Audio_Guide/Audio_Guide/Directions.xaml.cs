@@ -15,8 +15,23 @@ namespace Audio_Guide
         public Directions()
         {
             InitializeComponent();
+            Drctns();
         }
 
+       void DrcntsFunc()
+        {
+            Drctns.GestureRecognizers.Add(
+                new TapGestureRecognizer()
+                {
+                Command = new Command(() =>
+                 {
+                     DisplayAlert("Directions", "1. Turn Right \n2. Turn Left\n3. Go Straight Ahead", "Back");
+                 })
+
+                }
+            );
+        }
+      
       
     }
 }
