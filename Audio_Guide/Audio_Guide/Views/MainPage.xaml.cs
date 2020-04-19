@@ -72,9 +72,8 @@ namespace Audio_Guide.Views
             mapControl.Map.Limiter = new ViewportLimiterKeepWithin();
 
             //mapControl.Map = map;
+            
             ContentGrid.Children.Add(mapControl);
-
-
 
         }
 
